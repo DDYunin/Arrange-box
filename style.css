@@ -1,0 +1,116 @@
+body {
+  background: lightgoldenrodyellow;
+}
+
+.container {
+  width: 90%;
+  margin: 10vh auto;
+  min-height: 70vh;
+  background: rgba(102, 51, 153, 0.4);
+}
+
+/* Стили, которые потом с помощью js добавить */
+.arrange-box {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+  height: 100%;
+}
+
+.column {
+  border: 1px solid black;
+  height: 90%;
+}
+
+.column__title {
+  margin: 0;
+  background-color: aqua;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.column__list {
+  list-style: none;
+}
+
+.column__search {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;  
+}
+
+.column__search-text {
+  width: 200px;
+  height: 30px;
+}
+
+.column__list {
+  height: 500px;
+  margin: 0;
+  padding: 1rem 0;
+  overflow: auto;
+}
+
+.item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 0;
+  width: 400px;
+  background-color: white;
+  cursor: move;
+  margin-bottom: 5px;
+}
+
+/* .item:hover {
+  background-color: rgb(184, 184, 184);
+} */
+
+.item.selected {
+  background-color: rgb(192, 211, 227);
+}
+
+.active-drop-zone {
+  background-color: lightcyan;
+}
+
+.active {
+  background-color: rgb(181, 231, 181);
+  opacity: 0.9;
+}
+
+.item__name {
+  margin: 0;
+}
+
+.item__price {
+  margin: 0;
+}
+
+.button-classic {
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 2em;
+}
+
+.button-classic:hover {
+  cursor: pointer;
+  background-color:azure;
+}
+
+.button-classic:active {
+  transform: scaleY(0.98);
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 0 auto;
+}
