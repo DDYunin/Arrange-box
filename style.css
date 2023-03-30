@@ -1,12 +1,12 @@
 body {
-  background: #E7717D;
+  background: #f0ccd1;
 }
 
 .container {
   width: 90%;
   margin: 10vh auto;
   min-height: 70vh;
-  background: #C2CAD0
+  background: #dce7f0
 }
 
 /* Стили, которые потом с помощью js добавить */
