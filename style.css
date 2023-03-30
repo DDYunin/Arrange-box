@@ -1,12 +1,12 @@
 body {
-  background: lightgoldenrodyellow;
+  background: #A65F00
 }
 
 .container {
   width: 90%;
   margin: 10vh auto;
   min-height: 70vh;
-  background: rgba(102, 51, 153, 0.4);
+  background:#FFC373
 }
 
 /* Стили, которые потом с помощью js добавить */
@@ -24,7 +24,7 @@ body {
 
 .column__title {
   margin: 0;
-  background-color: aqua;
+  background-color: 	#61D7A4;
   text-align: center;
   font-size: 2rem;
 }
@@ -62,7 +62,7 @@ body {
   font-weight: bold;
   padding: 10px 0;
   width: 400px;
-  background-color: white;
+  background-color: #FFDC73;
   cursor: move;
   margin-bottom: 5px;
 }
@@ -101,7 +101,7 @@ body {
 
 .button-classic:hover {
   cursor: pointer;
-  background-color:azure;
+  background-color:#FF9200;
 }
 
 .button-classic:active {
