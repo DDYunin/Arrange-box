@@ -9,7 +9,6 @@ body {
   background: #dce7f0
 }
 
-/* Стили, которые потом с помощью js добавить */
 .arrange-box {
   display: flex;
   justify-content: space-evenly;
@@ -67,16 +66,8 @@ body {
   margin-bottom: 5px;
 }
 
-/* .item:hover {
-  background-color: rgb(184, 184, 184);
-} */
-
 .item.selected {
   background-color: rgb(192, 211, 227);
-}
-
-.active-drop-zone {
-  background-color: lightcyan;
 }
 
 .active {

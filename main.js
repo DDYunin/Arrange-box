@@ -16,7 +16,6 @@ function ArrangeBox() {
     let availableListTemp;
     let selectedListTemp;
 
-    // Вставляются все элементы переданного списка
     const insertListItems = (listName) => {
         if (listName === 'available') {
             insertHtml(document.querySelector(`.arrange-box${arrangeNumber}__left-column .column__list`).innerHTML = '');
@@ -39,7 +38,6 @@ function ArrangeBox() {
         }
     }
 
-    // Разобраться как работает эта функция
     function getDragAfterElement(container, y) {
        const draggableElements = [...container.querySelectorAll(`.arrange-box${arrangeNumber} .item:not(.selected)`)];
        return draggableElements.reduce((closest, child) => {
@@ -168,21 +166,17 @@ function ArrangeBox() {
                 const draggeble = document.querySelector(`.arrange-box${arrangeNumber} .selected`);
                 if (afterElement == null) {
                     dragZone.appendChild(draggeble);
-                    // Поменять значения в массиве
                 } else {
-                    // Менять значения в массиве
                     dragZone.insertBefore(draggeble, afterElement);
                 }
             });
         })
     }
 
-    // Вставляет детский блок внутрь родительского
     const insertHtml = (parentBlock, childrenBlock) => {
         parentBlock.innerHTML += childrenBlock;
     }
 
-    // Создаётся левое поле контрола
     const createLeftField = () => {
         insertHtml(document.querySelector(`.arrange-box${arrangeNumber}`), `<div class="arrange-box${arrangeNumber}__left-column column"</div>`);
         insertHtml(document.querySelector(`.arrange-box${arrangeNumber}__left-column`), `<h2 class="column__title">Available</h2>
@@ -194,7 +188,6 @@ function ArrangeBox() {
         insertListItems('available');
     }
 
-    // Создаётся правое поле контрола
     const createRightField = () => {
         insertHtml(document.querySelector(`.arrange-box${arrangeNumber}`), `
         <div class="arrange-box${arrangeNumber}__right-column column"></div>`)
